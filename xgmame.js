@@ -23,6 +23,7 @@ let board = function(event){
             const position =$(event.target).attr("id")
             slots[position] = player1
             event.target.style.color = 'blue'
+            $(this).css('font-fmaily', 'Comic Sans MS');
             turn++;
             $(this).off('click');
         
@@ -31,6 +32,8 @@ let board = function(event){
             const position =$(event.target).attr("id")
             slots[position] = player2
             event.target.style.color = 'yellow'
+            
+            
             turn--;
             $(this).off('click');
         
@@ -78,10 +81,11 @@ $('#reset').click(function(){
         "","","",
         "","",""
     ];
-    countMoves=0;
-    gameOver=false;
+    turn = 1;
     $('.flex-item').text('')
     $('.flex-item').on('click',board);
+    countMoves=0;
+    gameOver=false;
     $('#x').addClass('btn-x');
     $('#o').addClass('btn-o');
 })
