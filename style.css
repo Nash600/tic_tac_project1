@@ -16,7 +16,7 @@ h1 {
     
     display: flex;
     margin-left: 34%;
-    margin-top: 9%;
+    margin-top: 3%;
     border-top: solid 5px;
     border-bottom: solid 5px;
     width:615px;
@@ -58,19 +58,31 @@ h1 {
     cursor: pointer
     }*/ 
     button {
-        background-color: #4CAF50; /* Green */
+        background-color: burlywood; /* Green */
         border: none;
         color: white;
-        padding: 16px 32px;
+        padding: 8px 13px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-      /*  margin: 4px 2px;*/
-        margin:0 150px;
+        cursor: pointer
+      
+        
        
       }
-        
+      #x{
+        width: 100px;
+        height: 40px;
+        margin-right:20px;
+    }
+    #o{
+        width: 100px;
+        height: 40px;
+    }
+    #container{
+        text-align: center;
+    }
       
 
   .btn-x{
