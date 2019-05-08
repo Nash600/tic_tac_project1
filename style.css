@@ -15,7 +15,7 @@ h1 {
 .container {
     
     display: flex;
-    margin-left: 34%;
+    margin-left: 33%;
     margin-top: 3%;
     border-top: solid 5px;
     border-bottom: solid 5px;
@@ -74,7 +74,7 @@ h1 {
       #x{
         width: 100px;
         height: 40px;
-        margin-right:20px;
+        margin-right:40px;
     }
     #o{
         width: 100px;
@@ -89,6 +89,7 @@ h1 {
     background-color: white; 
   color: black; 
   border: 2px solid #4CAF50;
+  font-family: Comic Sans MS;
   }
 
   .btn-o {
@@ -96,5 +97,6 @@ h1 {
         background-color: white; 
         color: black; 
         border: 2px solid #008CBA;
+        font-family: Comic Sans MS;
       }
   
