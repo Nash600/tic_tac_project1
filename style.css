@@ -16,18 +16,17 @@ h1 {
     
     display: flex;
     justify-content: center;
+    
    /* margin-left: 33%;
     margin-top: 2%;
     border-top: solid 5px orange;
     border-bottom: solid 5px orange;
     width:615px;*/
-    
       
 }
   
   .flex-item {
     background: rgb(109, 103, 102);
-   /* padding: 0px;*/
     width: 200px;
     height: 150px;
     border-style: dashed;
@@ -61,13 +60,11 @@ h1 {
         width: 120px;
         height: 40px;
         margin-right:70px;
-        font-family: Fantasy;
         font-size: 1.25em;
     }
     #o{
         width: 120px;
         height: 40px;
-        font-family: Fantasy;
         font-size: 1.25em;
     }
     #container{
@@ -79,7 +76,7 @@ h1 {
     background-color: white; 
   color: black; 
   border: 2px solid #4CAF50;
-  font-family: Fantasy;
+  
   }
 
   .btn-o {
@@ -87,7 +84,7 @@ h1 {
         background-color: white; 
         color: black; 
         border: 2px solid #008CBA;
-        font-family: Fantasy;
+        
       }
 
 #reset {
@@ -100,6 +97,14 @@ h1 {
     font-size: 1.25em;
     color:blue;
     
+
+}
+#hidden {
+    font-size: 2em;
+    text-align: center;
+    color: red;
+    font: 'MisoRegular';
+   
 
 }
   

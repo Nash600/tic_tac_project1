@@ -10,11 +10,11 @@ let countMoves = 0;
 let gameOver = false;
 
 
-
 let board = function(event){
     if (gameOver === true ){
         $(this).off('click');
-        console.log("no more playiong")
+       $( "#hidden" ).html( "<p>The game is over, click reset.</p>" );
+       //alert("The game is over, click reset")
     } else {
         countMoves++;
         if (turn === 1) {
@@ -24,6 +24,7 @@ let board = function(event){
             slots[position] = player1
             event.target.style.color = 'blue'
             $(this).css('font-fmaily', 'Comic Sans MS');
+
             turn++;
             $(this).off('click');
         
@@ -33,14 +34,11 @@ let board = function(event){
             slots[position] = player2
             event.target.style.color = 'yellow'
             
-            
             turn--;
             $(this).off('click');
         
         }
         console.log(slots);
-        
-       
         
         winning();
         if (countMoves === 9 && gameOver !== true) {
@@ -73,8 +71,6 @@ $('#o').click(function () {
     
 })
 
-
-
 $('#reset').click(function(){
     slots = [
         "","","",
@@ -89,9 +85,6 @@ $('#reset').click(function(){
     $('#x').addClass('btn-x');
     $('#o').addClass('btn-o');
 })
-
-
-
 
 $('.flex-item').click(board)
 
@@ -143,11 +136,11 @@ function winning() {
     if(gameOver === true) {
         if (turn !==1){
             setTimeout(function(){
-                alert("you won " + player1)
+                alert(player1 + " player won " )
             },500);
         }else {
             setTimeout(function(){
-                alert("you won " + player1)
+                alert(player2 + " player won ")
             },500);
         }
         
